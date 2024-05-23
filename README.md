@@ -3,8 +3,22 @@
 - Create-react-app -> Created a new project
 - Configured tailwind
 - Header
+- Routing
 - Login form
 - Sign up form
+- Form Validation
+- Use Ref hook
+- Setting up firebase
+- Deploying our app to production
+- Create a sign up user account
+- Validating sign in of a registered user
+- Installing redux store
+- Created redux store with userSlice
+- Implemented Sign out
+- Validations
+- Redirected the app
+- Update profile API call
+- Fetch / build movies from TMDB
 
 ## Features
 
