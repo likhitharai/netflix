@@ -19,6 +19,18 @@
 - Redirected the app
 - Update profile API call
 - Fetch / build movies from TMDB
+    - Register for TMDB API, create a new app, and get the access token
+    - Get data from TMDB - now playing list and make an API call
+- Creating a store for movie slice
+- Custom hook for nowPlayingMovies
+- Create movie slice
+- Update store with movies data
+- Planning for main and secondary container
+- Fetch data for trailer video
+- Update store with trailer video data
+- Embeded the youtube video - make it autoplay and mute
+- Tailwind classes has been added
+- Build secondary component
 
 ## Features
 
