@@ -4,15 +4,14 @@ import Header from "./Header";
 import checkValidData from "../Utils/Validate";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile} from "firebase/auth";
 import { auth } from "../Utils/Firebase";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../Utils/userSlice";
+import { photoURL } from "../Utils/Constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(false);
 
-  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   //Creating a reference to this, and then calling the ref in the email field down below
@@ -56,7 +55,7 @@ const Login = () => {
           // Update a user profile: ///////////////////////////////////////////////////
           updateProfile(user, {
             displayName:name.current.value,
-            photoURL: "https://avatars.githubusercontent.com/u/38128585?v=4"
+            photoURL: {photoURL},
           })
             .then(() => {
               // Profile updated!
@@ -66,7 +65,7 @@ const Login = () => {
                   email: email, 
                   displayName: displayName, photoURL: photoURL}
         ));
-              navigate("/browse");
+              
             })
             .catch((error) => {
               // An error occurred
@@ -74,7 +73,6 @@ const Login = () => {
             });
 
             ///////////////////////////////////////////////
-          console.log(user);
           
         })
         .catch((error) => {
@@ -96,7 +94,6 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           console.log(user);
-          navigate("/browse");
           // ...
         })
         .catch((error) => {
