@@ -21,6 +21,22 @@
 - Unsubscribed the onAuthStateChange callback - Ep -15 -> (21m)
 - Add the hard coded values inside the constant files
 - Fetch / build movies from TMDB
+    - Register for TMDB API, create a new app, and get the access token
+    - Get data from TMDB - now playing list and make an API call
+- Creating a store for movie slice
+- Custom hook for nowPlayingMovies
+- Create movie slice
+- Update store with movies data
+- Planning for main and secondary container
+- Fetch data for trailer video
+- Update store with trailer video data
+- Embeded the youtube video - make it autoplay and mute
+- Tailwind classes has been added
+- Build secondary component
+- Build movie list
+- Build movie card
+- TMDB -  Image CDN - Added the URL
+- usePopularMovies custom hook
 
 ## Features
 
