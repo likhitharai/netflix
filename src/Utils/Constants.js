@@ -6,5 +6,7 @@ method: 'GET',
       accept: 'application/json',
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzMWI3NWJjODJiMDNhYjY2YjZmNjU4MjZkN2RmZmFmZSIsInN1YiI6IjY2NGYzNTc4ZWQyNmUzMmZmNzM0ZDY2ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.eKMQaJZ8jb6LYcPIKa6ghJxgfXr8C0zCoV0zXAqVDns'
     }
-}
-  ;
+};
+
+
+export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";

@@ -32,6 +32,11 @@
 - Update store with trailer video data
 - Embeded the youtube video - make it autoplay and mute
 - Tailwind classes has been added
+- Build secondary component
+- Build movie list
+- Build movie card
+- TMDB -  Image CDN - Added the URL
+- usePopularMovies custom hook
 
 ## Bug fixes:
 - Sign up user dispayName and sign up profile picture update
